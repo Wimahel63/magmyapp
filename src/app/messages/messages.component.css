@@ -1,0 +1,12 @@
+p{
+    color:red;
+    background:green;
+    height:50px;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+p:hover{
+    color:green;
+    background:red;
+}

@@ -1,0 +1,8 @@
+<p>
+  Voici mes messages: Wingardium leviosa
+</p>
+<button (click)="messageService.clear()"> clear </button>
+<div *ngIf="messageService.messages.length">
+
+<div *ngFor='let message of messageService.messages'>{{message}}</div>
+</div>

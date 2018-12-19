@@ -1,0 +1,18 @@
+<!-- <div *ngIf="hero"> -->
+        <div>
+    <!--condition: si j'appuie sur un perso, alors affiche moi les données qui suivent, mais s'il ne contient aucune variable, alors oublie ce qui suit-->
+  <h2>les infos de : {{hero | uppercase}}</h2><!--ici; je definis les personnes a propos desquelles j'ai les infos au clic-->
+  <div><span>id:</span>{{hero.id}}</div>
+  <div>
+      <label>name:
+          <input [(ngModel)]="hero.name" placeholder="name">
+      </label>
+      <label>age:
+          <input [(ngModel)]="hero.age" placeholder="age">
+      </label>
+      <label>poste:
+          <input [(ngModel)]="hero.poste" placeholder="poste">
+      </label>
+  </div>
+  </div>
+<button (click)="goBack()">Retour</button><!--event biding: execute l'evenement qui est en .ts-->
